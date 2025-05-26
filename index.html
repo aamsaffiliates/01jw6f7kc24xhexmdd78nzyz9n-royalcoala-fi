@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Coala Casino - Tervetuloa Suomen parhaaseen nettikasinoon!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/favicon.png" type="image/png" sizes="144x144" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="src/logo.png" style="height: 80px;">
+            </div>
+            <div class="nav-buttons">
+                <a href="/register" class="btn btn-secondary">Kirjaudu</a>
+                <a href="/register" class="btn btn-primary">Rekisteröidy</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Tervetuloa Royal Coala Casino!</h1>
+                <p>Astu rauhalliseen maailmaan, joka on täynnä jännitystä, jossa joka kulma tarjoaa leikkisiä mahdollisuuksia ja viehättäviä yllätyksiä.</p>
+                
+                <div class="bonus-highlight">
+                    <h2>140% aina 1.000€ asti!</h2>
+                    <p>Tervetuloa bonus - vain 25€ talletus vaaditaan</p>
+                    <button class="bonus-more-btn" onclick="toggleBonusDetails()">Lisätietoja bonuksesta</button>
+                    
+                    <div class="bonus-details" id="bonusDetails">
+                        <div class="bonus-details-content">
+                            <div class="bonus-steps">
+                                <h4>Kuinka lunastaa bonus:</h4>
+                                <div class="bonus-step">
+                                    <div class="step-number">1</div>
+                                    <span>Kirjaudu sisään tilillesi</span>
+                                </div>
+                                <div class="bonus-step">
+                                    <div class="step-number">2</div>
+                                    <span>Klikkaa "Talleta nyt"</span>
+                                </div>
+                                <div class="bonus-step">
+                                    <div class="step-number">3</div>
+                                    <span>Valitse "Tervetuloa Casino Bonus" pudotusvalikosta</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bonus-terms">
+                                <h4>Bonuksen ehdot:</h4>
+                                <ul>
+                                    <li>Minimi talletus: 25€</li>
+                                    <li>Maksimi bonussumma: 1.000€</li>
+                                    <li>Kierrätysvaatimus: 40x (talletus + bonus)</li>
+                                    <li>Bonuksen voimassaolo: 30 päivää aktivoinnista</li>
+                                    <li>Bonus ja voitot menetetään, jos kierrätysvaatimusta ei täytetä ajallaan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="/register" class="btn btn-primary">Pelaa nyt</a>
+            </div>
+            <div class="hero-image" style="padding:20px">
+                <img style="max-width: 100%; border-radius: 50px;" src="src//hero.png" alt="RoyalCoala thumbnail">
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games-section">
+        <div class="container">
+            <h2 class="section-title">Suosituimmat pelit Suomessa</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/starburst.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Starburst</div>
+                        <div class="game-provider">NetEnt</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/gonzo.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Gonzo's Quest</div>
+                        <div class="game-provider">NetEnt</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/bookofdead.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Book of Dead</div>
+                        <div class="game-provider">Play'n GO</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/moolah.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Mega Moolah</div>
+                        <div class="game-provider">Microgaming</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/reactoons.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Reactoonz</div>
+                        <div class="game-provider">Play'n GO</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/jars.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Jammin' Jars</div>
+                        <div class="game-provider">Push Gaming</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/vikings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Vikings Go Berzerk</div>
+                        <div class="game-provider">Yggdrasil</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <a href="/register">
+                            <img style="max-width: 100%;" src="src/joker.png" alt="">
+                        </a>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">Fire Joker</div>
+                        <div class="game-provider">Play'n GO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="promotions-section">
+        <div class="container">
+            <h2 class="section-title">Kampanjat ja bonukset</h2>
+            <div class="promotions-grid">
+                <div class="promo-card">
+                    <h3 class="promo-title">Tervetuloa Casino Bonus</h3>
+                    <div class="promo-amount">140% aina 1.000€ asti</div>
+                    <p>Minimi talletus 25€. Kierrätysvaatimus 40x (talletus + bonus). Voimassa 30 päivää.</p>
+                    <a href="/register" class="btn btn-primary">Lunasta bonus</a>
+                </div>
+                <div class="promo-card">
+                    <h3 class="promo-title">Live Casino Bonus</h3>
+                    <div class="promo-amount">100% aina 500€ asti</div>
+                    <p>Talleta 25€ ja avaa jännittävä 100% bonus live casinoon!</p>
+                    <a href="/register" class="btn btn-primary">Lunasta bonus</a>
+                </div>
+                <div class="promo-card">
+                    <h3 class="promo-title">Reload Bonus</h3>
+                    <div class="promo-amount">80% aina 500€ asti</div>
+                    <p>Talleta 25€ ja hyppää jännitykseen 80% bonuksella!</p>
+                    <a href="/register" class="btn btn-primary">Lunasta bonus</a>
+                </div>
+                <div class="promo-card">
+                    <h3 class="promo-title">Crypto Bonus</h3>
+                    <div class="promo-amount">120% aina 1.000€ asti</div>
+                    <p>Talleta kryptovaluutalla ja ota yhteyttä tukeen saadaksesi päivittäisen bonuksen!</p>
+                    <a href="/register" class="btn btn-primary">Lunasta bonus</a>
+                </div>
+                <div class="promo-card">
+                    <h3 class="promo-title">Päivittäinen Cashback</h3>
+                    <div class="promo-amount">10% aina 2.000€ asti</div>
+                    <p>Talleta 20€, pelaa lempi pelejäsi ja saa seuraavana päivänä 10% cashback!</p>
+                    <a href="/register" class="btn btn-primary">Lunasta bonus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banking Section -->
+    <section class="banking-section">
+        <div class="container">
+            <h2 class="section-title">Maksu- ja nostotavat</h2>
+            <div class="banking-grid">
+                <div class="banking-table">
+                    <h3>Talletukset</h3>
+                    <div class="payment-method">
+                        <span>Zimpler</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>OP Pankki</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>Nordea</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>Danske Bank</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>Säästöpankki</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>POP Pankki</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>S-Pankki</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>Aktia</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>Oma Säästöpankki</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>Ålandsbanken</span>
+                        <span>25€ - 15.000€</span>
+                    </div>
+                </div>
+                <div class="banking-table">
+                    <h3>Nostot</h3>
+                    <div class="payment-method">
+                        <span>Zimpler</span>
+                        <span>50€ - 1.000€</span>
+                    </div>
+                    <div class="payment-method">
+                        <span>Pankkisiirto</span>
+                        <span>100€ - 500€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pay'n'Play Section -->
+    <section class="paynplay-section">
+        <div class="container">
+            <div class="paynplay-content">
+                <h2>Pay 'N Play - Pelaa välittömästi</h2>
+                <p>Suomalainen Pay 'N Play -ominaisuus mahdollistaa nopean ja turvallisen pelaamisen ilman rekisteröitymistä. Talleta suoraan verkkopankkitunnuksillasi ja aloita pelaaminen välittömästi. Tiedot haetaan automaattisesti pankistasi, mikä tekee prosessista saumattoman ja turvallisen.</p>
+                <p>Tuetut pankit: OP, Nordea, Danske Bank, Säästöpankki, POP Pankki, S-Pankki, Aktia, Oma Säästöpankki ja Ålandsbanken.</p>
+                <a href="/register" class="btn btn-primary">Aloita pelaaminen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsible Gaming Section -->
+    <section class="responsible-section">
+        <div class="container">
+            <div class="responsible-content">
+                <h2 class="section-title">Vastuullinen pelaaminen</h2>
+                <p>Royal Coala Casino sitoutuu vastuulliseen pelaamiseen. Pelaamisen tulisi aina olla hauskaa ja viihdyttävää. Jos pelaaminen aiheuttaa ongelmia, suosittelemme ottamaan yhteyttä seuraaviin suomalaisiin organisaatioihin:</p>
+                <div class="responsible-links">
+                    <a rel="nofollow" href="https://www.peluuri.fi" target="_blank">Peluuri</a>
+                    <a rel="nofollow" href="https://www.ehkaisevapaihdety.fi" target="_blank">Ehkäisevä päihdetyö</a>
+                    <a rel="nofollow" href="https://www.mielenterveysseura.fi" target="_blank">Mielenterveysseura</a>
+                    <a rel="nofollow" href="https://www.a-klinikka.fi" target="_blank">A-klinikka</a>
+                </div>
+                <p style="margin-top: 2rem;">Voit myös asettaa pelirajoituksia tilillesi tai sulkea tilin väliaikaisesti tai pysyvästi ottamalla yhteyttä asiakaspalveluumme.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Royal Coala Casino</strong></p>
+                <p>Royal Coala omistaa ja operoi Famagousta B.V., joka on rekisteröity Curaçaon kaupparekisteriin numerolla 152449. Rekisteröity osoite: Schout Bij Nacht Doormanweg 40, Curaçao.</p>
+                <p>Famagousta B.V:llä on vireillä pelilisenssihakemus (OGL/2023/155/0098) Curaçaon pelilupavirastossa. Kunnes tämä prosessi on valmis, yritys saa jatkaa toimintaansa siirtymäjärjestelyn perusteella tämän toimintasertifikaatin nojalla.</p>
+                <p>Maksun käsittelijä: Fodenmacko Trading Co. Limited (rek. nro HE309248), rekisteröity osoite: Lefkonos 22, 2nd floor, Strovolos 2064, Nicosia, Kypros.</p>
+                <p style="margin-top: 2rem;">2025 Royal Coala Casino. Kaikki oikeudet pidätetään.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleBonusDetails() {
+            const details = document.getElementById('bonusDetails');
+            const button = document.querySelector('.bonus-more-btn');
+            
+            if (details.classList.contains('expanded')) {
+                details.classList.remove('expanded');
+                button.textContent = 'Lisätietoja bonuksesta';
+            } else {
+                details.classList.add('expanded');
+                button.textContent = 'Piilota tiedot';
+            }
+        }
+    </script>
+</body>
+</html>
